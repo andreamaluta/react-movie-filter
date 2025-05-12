@@ -23,13 +23,13 @@ function App() {
     setFilteredFilm(filtered);
   }, [selected])
 
+
   return (
     <>
       <div className="container">
         <h1 className='mb-4'>Film Filter</h1>
 
         <select className="form-select mb-4" value={selected} onChange={(e) => setSelected(e.target.value)}>
-          {/* <option value="">Seleziona un genere</option> */}
           <option selected></option>
           <option value="Fantascienza">Fantascienza</option>
           <option value="Thriller">Thriller</option>
