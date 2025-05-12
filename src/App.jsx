@@ -30,7 +30,7 @@ function App() {
 
         <select className="form-select mb-4" value={selected} onChange={(e) => setSelected(e.target.value)}>
           {/* <option value="">Seleziona un genere</option> */}
-          <option selected>Open this select menu</option>
+          <option selected></option>
           <option value="Fantascienza">Fantascienza</option>
           <option value="Thriller">Thriller</option>
           <option value="Romantico">Romantico</option>
