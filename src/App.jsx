@@ -21,14 +21,14 @@ function App() {
       film.genre.toLowerCase().includes(selected.toLocaleLowerCase())
     )
     setFilteredFilm(filtered);
-  }, [films])
+  }, [selected])
 
   return (
     <>
       <div className="container">
         <h1 className='mb-4'>Film Filter</h1>
 
-        <select className="form-select mb-4" value={selected} onChange={(e) => setSelected[e.target.value]}>
+        <select className="form-select mb-4" value={selected} onChange={(e) => setSelected(e.target.value)}>
           {/* <option value="">Seleziona un genere</option> */}
           <option selected>Open this select menu</option>
           <option value="Fantascienza">Fantascienza</option>
@@ -38,7 +38,7 @@ function App() {
         </select>
 
         <ul className="list-group">
-          {films.map((film, index) => (
+          {filteredFilm.map((film, index) => (
             <li key={index} className='list-group-item'>
               {film.title}
             </li>
