@@ -30,7 +30,7 @@ function App() {
         <h1 className='mb-4'>Film Filter</h1>
 
         <select className="form-select mb-4" value={selected} onChange={(e) => setSelected(e.target.value)}>
-          <option selected></option>
+          <option value="">Tutti i generi</option>
           <option value="Fantascienza">Fantascienza</option>
           <option value="Thriller">Thriller</option>
           <option value="Romantico">Romantico</option>
